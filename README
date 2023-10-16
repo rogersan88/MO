@@ -1,0 +1,36 @@
+# Introduction
+***
+QA Automation
+
+
+## Technologies
+***
+A list of technologies used within the project:
+* [Python](https://www.python.org/): Version 3.9
+* [Selenium](https://selenium-python.readthedocs.io/): Version 4.14
+* [Behave](https://behave.readthedocs.io/en/stable/): Version 1.2.6
+
+## Installation
+***
+A little intro about the installation.
+```
+$ git clone https://github.com/rogersan88/MO-Test.git
+$ pip install selenium
+$ pip install behave
+
+
+The user's credentials must be configured in the "properties.ini " file in the user and password variables
+
+Side information:
+Suggestion to use the script with the pycharm IDE
+
+## Execution
+***
+To execute the script, the following statement must be typed via console and enter:
+```
+behave --junit .\features\"{feature to be executed}" or behave .\features -k --tags=@login
+```
+example:
+```
+[Login flow] -> behave --junit .\features\login.feature
+
