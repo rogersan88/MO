@@ -1,6 +1,6 @@
 Feature: Login
 
-  @login
+  @WEB
   Scenario: Log in Successfully
     Given The user enters the website
     When Enter username and password

@@ -17,6 +17,7 @@ A little intro about the installation.
 $ git clone https://github.com/rogersan88/MO-Test.git
 $ pip install selenium
 $ pip install behave
+$ pip install request
 
 
 The user's credentials must be configured in the "properties.ini " file in the user and password variables
@@ -28,7 +29,7 @@ Suggestion to use the script with the pycharm IDE
 ***
 To execute the script, the following statement must be typed via console and enter:
 ```
-behave --junit .\features\"{feature to be executed}" or behave .\features -k --tags=@login
+behave --junit .\features\"{feature to be executed}" or behave .\features -k --tags={@tag to be executed}
 ```
 example:
 ```

@@ -31,7 +31,7 @@ class SetParameterDriver:
 
             })
 
-        service = Service(executable_path=os.getcwd()+"\\drivers\\"+ConfigManager.get_value("pathDriver"))
+        service = Service(executable_path=os.getcwd() + "\\drivers\\" + ConfigManager.get_value("pathDriver"))
         driver = webdriver.Chrome(service=service, options=options)
         driver.delete_all_cookies()
         driver.maximize_window()
